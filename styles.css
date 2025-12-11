@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222222;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Layout base */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* HEADER */
+.header {
+  background: #004A86; /* Azul del logo */
+  color: #ffffff;
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Logo como imagen */
+.logo-img {
+  height: 55px;
+  width: auto;
+  display: block;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-main {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.brand-sub {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  color: #ffffff;
+}
+
+.btn-wsp-header {
+  background: #25d366;
+  color: #ffffff;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* HERO */
+.hero {
+  padding: 3.5rem 0 2.5rem;
+  background: linear-gradient(135deg, #f5f9ff, #ffffff);
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: #004A86; /* Azul del logo */
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-list {
+  margin-bottom: 1.5rem;
+  padding-left: 1.1rem;
+}
+
+.hero-list li {
+  margin-bottom: 0.4rem;
+  list-style: disc;
+}
+
+.btn-cta {
+  display: inline-block;
+  background: #ffb400;
+  color: #003366;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-note {
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+/* HERO IMAGES - FOTOS GENÉRICAS */
+.hero-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.hero-photo {
+  border-radius: 0.8rem;
+  min-height: 160px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Podés reemplazar estas imágenes por fotos reales cuando las tengas */
+.hero-photo-1 {
+  background-image: url("https://images.pexels.com/photos/5854188/pexels-photo-5854188.jpeg?auto=compress&cs=tinysrgb&w=800");
+}
+
+.hero-photo-2 {
+  background-image: url("https://images.pexels.com/photos/5854197/pexels-photo-5854197.jpeg?auto=compress&cs=tinysrgb&w=800");
+}
+
+/* SECCIONES GENERALES */
+.section {
+  padding: 3rem 0;
+}
+
+.section-alt {
+  background: #f7f9fb;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+  color: #004A86; /* Azul del logo */
+}
+
+.section-intro {
+  margin-bottom: 1.5rem;
+  color: #444444;
+}
+
+/* CARDS SERVICIOS */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 0.9rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #004A86; /* Azul del logo */
+}
+
+.card ul {
+  padding-left: 1.1rem;
+}
+
+.card li {
+  list-style: disc;
+  margin-bottom: 0.4rem;
+}
+
+/* ZONAS */
+.zones-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.zone-item {
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #004A86;
+  color: #004A86;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #ffffff;
+}
+
+.zones-note {
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+/* BENEFICIOS */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: #004A86; /* Azul del logo */
+}
+
+/* CONTACTO */
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.2fr);
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.contact-list {
+  margin-bottom: 1rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.4rem;
+}
+
+.contact-box {
+  background: #ffffff;
+  border-radius: 0.9rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-size: 0.95rem;
+  color: #444444;
+}
+
+/* FOOTER */
+.footer {
+  background: #004A86; /* Azul del logo */
+  color: #ffffff;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+}
+
+.footer-inner {
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-wsp-header {
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .hero {
+    padding-top: 2.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+}
+
