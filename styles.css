@@ -69,6 +69,12 @@ a {
   color: #ffffff;
 }
 
+.brand-sub-mat {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  color: #ffffff;
+}
+
 .btn-wsp-header {
   background: #25d366;
   color: #ffffff;
@@ -129,7 +135,7 @@ a {
   color: #555555;
 }
 
-/* HERO IMAGES - FOTOS GENÉRICAS */
+/* HERO IMAGES - FOTOS REALES */
 .hero-image {
   display: grid;
   grid-template-columns: 1fr;
@@ -144,13 +150,16 @@ a {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* Podés reemplazar estas imágenes por fotos reales cuando las tengas */
-.hero-photo-1 {
-  background-image: url("https://images.pexels.com/photos/5854188/pexels-photo-5854188.jpeg?auto=compress&cs=tinysrgb&w=800");
+.hero-photo-gas {
+  background-image: url("gas-siv.jpg");
 }
 
-.hero-photo-2 {
-  background-image: url("https://images.pexels.com/photos/5854197/pexels-photo-5854197.jpeg?auto=compress&cs=tinysrgb&w=800");
+.hero-photo-termofusion {
+  background-image: url("termofusion-siv.jpg");
+}
+
+.hero-photo-inodoro {
+  background-image: url("inodoro-siv.jpg");
 }
 
 /* SECCIONES GENERALES */
@@ -263,6 +272,19 @@ a {
   color: #444444;
 }
 
+/* MAPA */
+.map-wrapper {
+  border-radius: 0.9rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 320px;
+  border: 0;
+}
+
 /* FOOTER */
 .footer {
   background: #004A86; /* Azul del logo */
@@ -314,4 +336,3 @@ a {
     font-size: 1.6rem;
   }
 }
-
